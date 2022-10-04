@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Work+Sans:400,500,600,700&display=swap');
+
+
+.login-background {
+    height: 100vh;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    font-family: "work sans";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .login-container {
+        width: 350px;
+        height: 500px;
+        border-radius: 20px;
+        background: white;
+
+        .login-content {
+            padding: 10px;
+            p.login-title.col-12.text-center {
+                padding: 30px;
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .login-input{
+                margin: 10px 0;
+            }
+
+            .login-password {
+                position: relative;
+
+                i.far.fa-eye {
+                    margin-left: 300px;
+                    margin-top: -24px;
+                    position: absolute;
+                    cursor: pointer;
+                }
+
+                i.fas.fa-eye-slash{
+                    margin-left: 300px;
+                    margin-top: -24px;
+                    position: absolute;
+                    cursor: pointer;
+                }
+            }
+
+            label {
+                color: #999;
+                font-family: auto;
+                margin-left: 20px;
+            }
+
+            .forgot-pass.col-12.text-center {
+                margin: 10px;
+            }
+
+            .login-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button {
+                    width: 80%;
+                    border: none;
+                    border-radius: 20px;
+                    height: 30px;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 17px;
+                    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+                }
+            }
+
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                margin: 20px;
+
+                .icon-gg {
+                    background: red;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-self: stretch;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+
+                    i.fab.fa-google-plus-g {
+                        font-size: 25px;
+                    }
+                }
+
+                .icon-tw {
+                    background: #0ab7ea;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-self: stretch;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+
+                    i.fab.fa-twitter {
+                        font-size: 25px;
+                    }
+                }
+
+                .icon-fb {
+                    background: #3232d2;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-self: stretch;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+
+                    i.fab.fa-facebook-f {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+        }
+    }
+}
