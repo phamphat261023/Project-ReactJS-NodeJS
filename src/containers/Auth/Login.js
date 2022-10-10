@@ -43,7 +43,7 @@ class Login extends Component {
         });
       }
       if (data && data.errCode === 0) {
-        userLoginSuccess(data.user);
+        this.props.userLoginSuccess(data.user);
       }
     } catch (error) {
       if (error.response) {
@@ -104,9 +104,9 @@ class Login extends Component {
                     }}
                   >
                     {this.state.isShowPassword === true ? (
-                      <i class="far fa-eye"></i>
+                      <i className="far fa-eye"></i>
                     ) : (
-                      <i class="fas fa-eye-slash"></i>
+                      <i className="fas fa-eye-slash"></i>
                     )}
                   </span>
                 </div>
@@ -127,13 +127,13 @@ class Login extends Component {
                 <span>or sign with: </span>
                 <div className="icon">
                   <div className="icon-gg">
-                    <i class="fab fa-google-plus-g"></i>
+                    <i className="fab fa-google-plus-g"></i>
                   </div>
                   <div className="icon-tw">
-                    <i class="fab fa-twitter"></i>
+                    <i className="fab fa-twitter"></i>
                   </div>
                   <div className="icon-fb">
-                    <i class="fab fa-facebook-f"></i>
+                    <i className="fab fa-facebook-f"></i>
                   </div>
                 </div>
               </div>

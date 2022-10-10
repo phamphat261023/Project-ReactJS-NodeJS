@@ -1,0 +1,135 @@
+.user-container {
+  .title {}
+
+  .btn-add-new {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    box-shadow: 2px 1px 2px #000000a1;
+  }
+
+  .user-table {
+    padding: 20px;
+
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+
+      td,
+      th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #ddd;
+      }
+
+    }
+
+    button.btn-edit,
+    button.btn-delete {
+      background: transparent;
+      color: orange;
+      margin-left: 5px;
+      border: none;
+      box-shadow: 1px 1px 1px black;
+    }
+
+    button.btn-delete {
+      color: red;
+    }
+  }
+}
+
+.modals-user-container {
+  .modal-content{
+    .modal-header{    
+        button{
+          background: none !important;
+          color: white;
+          border: none !important;
+          font-size: 30px;
+        }   
+    }
+  }
+
+  .modals-user-body {
+    .modals-user-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+
+      .input-container {
+        width: 50%;
+        margin: 10px;
+        .modals-input {
+          padding: 0 10px;
+          width: 100%;
+          outline: none;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0px 1px darkgrey;
+        }
+      }
+    }
+
+    .modals-address {
+      margin: 10px;
+
+      .modals-input {
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 1px darkgrey;
+      }
+    }
+
+    .modals-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .modals-footer-left {
+        .modals-phone {
+          .modals-input {
+            width: 250px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 1px darkgrey;
+          }
+        }
+      }
+
+      .modals-footer-right {
+        display: flex;
+        width: 250px;
+        gap: 10px;
+
+        .modals-select {
+          border: none !important;
+          box-shadow: 0px 1px darkgrey !important;
+        }
+      }
+    }
+
+  }
+}
